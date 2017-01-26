@@ -506,7 +506,7 @@
        <script>
         // https://clboadvanced.herokuapp.com/users
         
-         $.getJSON( "http://lektionsplanapp2.apphb.com/api/products", function( data ) {
+         $.getJSON( "http://dot_net_lektionsapp.apphb.com/api/products", function( data ) {
                 var items = "<table>" + 
                 "<tr>" +
                     "<th>Week</th>" + 
@@ -517,7 +517,7 @@
                 "</tr>";
 
                 $.each( data, function( key, val ) {
-                items += "<tr><td>" + val.name + "</td><td>" + val.lastname + "</td><td>" + val.address + "</td><td>" + val.phone + "</td><td>" + val.email + "</td></tr>";
+                items += "<tr><td>" + val.Week + "</td><td>" + val.TeachingStartTime + "</td><td>" + val.TeachingEndTime + "</td><td>" + val.DayNo + "</td><td>" + val.Subject + "</td></tr>";
             });
  
 
